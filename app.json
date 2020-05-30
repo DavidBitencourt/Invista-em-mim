@@ -1,12 +1,8 @@
 {
   "expo": {
-    "name": "invista-em-mim",
+    "name": "Invista em Mim",
     "slug": "invista-em-mim",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,11 +14,14 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
+      "bundleIdentifier": "com.globo.mundoglobo",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.globo.mundoglobo",
+      "versionCode": 1
     }
   }
 }
