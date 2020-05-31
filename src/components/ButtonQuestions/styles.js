@@ -1,18 +1,22 @@
 import { StyleSheet } from "react-native";
+import { systemWeights } from "react-native-typography";
 
 export const styles = StyleSheet.create({
   button: {
-    width: "45%",
-    height: "100%",
+    height: 40,
+    width: "100%",
     borderRadius: 50,
-    alignItems: "center",
-    justifyContent: "space-between",
+    alignItems: "flex-end",
+    justifyContent: "flex-end",
     flexDirection: "row",
+    top: 20,
   },
   textButton: {
-    height: "100%",
-    fontSize: 20,
-    fontWeight: "bold",
+    ...systemWeights.bold,
+    fontSize: 18,
     color: "#F58220",
+    alignItems: "center",
+    justifyContent: "space-between",
+    textAlign: "center",
   },
 });

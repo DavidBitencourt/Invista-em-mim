@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
-
 export default function ButtonQuestions({ text, handler, disabled, width }) {
   ButtonQuestions.defaultProps = {
     text: "",
@@ -36,7 +35,7 @@ export default function ButtonQuestions({ text, handler, disabled, width }) {
         style={styles.button}
       >
         <Text style={styles.textButton}>{text}</Text>
-        <MaterialIcons name="navigate-next" size={30} color="#F58220" />
+        <MaterialIcons name="navigate-next" size={25} color="#F58220" />
       </TouchableOpacity>
     </View>
   );

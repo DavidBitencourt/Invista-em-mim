@@ -14,6 +14,7 @@ export default function RadioButton({ items, label, changeValue }) {
         onPress={(value) => {
           changeValue(value);
         }}
+        buttonColor="#F58220"
       />
     </View>
   );

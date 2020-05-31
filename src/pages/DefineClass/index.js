@@ -88,7 +88,7 @@ export default function DefineClass() {
             width: hp("100%"),
             height: wp("100%"),
             right: 0,
-            bottom: 150,
+            bottom: 50,
             zIndex: 555,
             position: "absolute",
           }}
@@ -100,7 +100,7 @@ export default function DefineClass() {
             width: hp("200%"),
             height: wp("150%"),
             right: 295,
-            bottom: 0,
+            bottom: 40,
           }}
         />
       </View>
