@@ -14,23 +14,19 @@ export const styles = StyleSheet.create({
   },
   header: {
     width: wp("100%"),
-    height: hp("40%"),
+    height: hp("15%"),
     alignItems: "center",
-    justifyContent: "flex-end",
+    justifyContent: "center",
   },
-  logo: {
+  questions: {
     width: wp("100%"),
-    height: hp("40%"),
+    height: hp("70%"),
     alignItems: "center",
-    justifyContent: "flex-end",
-  },
-  title: {
-    fontSize: wp("10%"),
-    fontWeight: "bold",
+    justifyContent: "center",
   },
   footer: {
     width: wp("100%"),
-    height: hp("20%"),
+    height: hp("15%"),
     alignItems: "center",
     justifyContent: "center",
   },

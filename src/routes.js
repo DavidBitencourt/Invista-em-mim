@@ -4,6 +4,7 @@ import React from "react";
 import { StatusBar } from "react-native";
 import "react-native-gesture-handler";
 import DefineClass from "./pages/DefineClass";
+import Game from "./pages/Game";
 import Home from "./pages/Home";
 const AppStack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function Routes() {
       >
         <AppStack.Screen name="Home" component={Home} />
         <AppStack.Screen name="DefineClass" component={DefineClass} />
+        <AppStack.Screen name="Game" component={Game} />
       </AppStack.Navigator>
     </NavigationContainer>
   );
