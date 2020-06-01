@@ -7,7 +7,7 @@ import {
 } from "react-native-responsive-screen";
 import backOrange from "../../assets/backOrange.png";
 import backOrangeWhite from "../../assets/backOrangeWhite.png";
-import logo from "../../assets/logoNew.jpeg";
+import logo from "../../assets/logo.png";
 import Button from "../../components/Button";
 import { styles } from "./styles";
 
@@ -35,7 +35,7 @@ export default function Home() {
             resizeMode: "contain",
             width: hp("200%"),
             height: wp("150%"),
-            right: 295,
+            right: 260,
             bottom: 0,
           }}
         />
@@ -55,7 +55,7 @@ export default function Home() {
           text="ENTRAR"
           textColor="#ffffff"
           backgroundColor="#8708FE"
-          handler={() => navigation.navigate("DefineClass")}
+          handler={() => navigation.navigate("DashUser")}
         />
       </View>
     </View>

@@ -3,12 +3,19 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
-export default function Button({ text, handler, disabled, width }) {
+export default function Button({
+  text,
+  handler,
+  disabled,
+  width,
+  normalButton,
+}) {
   Button.defaultProps = {
     text: "",
     handler: () => {},
     disabled: false,
     width: null,
+    normalButton: false,
   };
 
   Button.propTypes = {
@@ -16,16 +23,19 @@ export default function Button({ text, handler, disabled, width }) {
     handler: PropTypes.func,
     disabled: PropTypes.bool,
     width: PropTypes.number,
+    normalButton: PropTypes.bool,
   };
 
   return (
     <LinearGradient
-      colors={["#F58220", "#FFF134"]}
+      colors={normalButton ? ["#FFFFFF", "#FFFFFF"] : ["#F58220", "#FFF134"]}
       style={{
-        width: "60%",
-        height: 60,
-        borderRadius: 30,
+        width: "65%",
+        height: 50,
+        borderRadius: 25,
         alignItems: "center",
+        borderWidth: 2,
+        borderColor: normalButton ? "#F58220" : "#000000",
       }}
       start={[0, 0]}
       end={[1, 1]}

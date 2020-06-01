@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     width: "80%",
     height: "100%",
     fontWeight: "bold",
-    marginTop: hp("2%"),
+    marginTop: hp("5%"),
     margin: 10,
   },
 });

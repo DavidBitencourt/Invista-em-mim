@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-
+import { systemWeights } from "react-native-typography";
 export const styles = StyleSheet.create({
   button: {
     width: "100%",
@@ -9,8 +9,9 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
   textButton: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "#FFFFFF",
+    ...systemWeights.bold,
+    fontSize: 13,
+    color: "#000000",
+    textAlign: "center",
   },
 });

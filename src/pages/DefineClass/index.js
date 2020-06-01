@@ -99,7 +99,7 @@ export default function DefineClass() {
             resizeMode: "contain",
             width: hp("200%"),
             height: wp("150%"),
-            right: 295,
+            right: 260,
             bottom: 40,
           }}
         />
@@ -121,6 +121,13 @@ export default function DefineClass() {
           changeValue={(value) => setData({ ...data, target: value })}
         />
         <View style={styles.footer}>
+          <ButtonQuestions
+            text="Voltar"
+            left
+            handler={() => {
+              navigation.navigate("DashUser");
+            }}
+          />
           <ButtonQuestions
             text="Avançar"
             handler={() => {

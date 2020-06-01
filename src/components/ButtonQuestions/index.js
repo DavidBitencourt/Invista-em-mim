@@ -3,12 +3,19 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
-export default function ButtonQuestions({ text, handler, disabled, width }) {
+export default function ButtonQuestions({
+  text,
+  handler,
+  disabled,
+  width,
+  left,
+}) {
   ButtonQuestions.defaultProps = {
     text: "",
     handler: () => {},
     disabled: false,
     width: null,
+    left: false,
   };
 
   ButtonQuestions.propTypes = {
@@ -16,6 +23,7 @@ export default function ButtonQuestions({ text, handler, disabled, width }) {
     handler: PropTypes.func,
     disabled: PropTypes.bool,
     width: PropTypes.number,
+    left: PropTypes.bool,
   };
 
   return (
@@ -34,8 +42,13 @@ export default function ButtonQuestions({ text, handler, disabled, width }) {
         width={width}
         style={styles.button}
       >
+        {left && (
+          <MaterialIcons name="navigate-before" size={25} color="#F58220" />
+        )}
         <Text style={styles.textButton}>{text}</Text>
-        <MaterialIcons name="navigate-next" size={25} color="#F58220" />
+        {!left && (
+          <MaterialIcons name="navigate-next" size={25} color="#F58220" />
+        )}
       </TouchableOpacity>
     </View>
   );

@@ -29,13 +29,14 @@ export const styles = StyleSheet.create({
     borderColor: "#000000",
     padding: 20,
     position: "relative",
-    bottom: hp("15%"),
+    bottom: hp("20%"),
     zIndex: 55555,
   },
   footer: {
     width: "100%",
-    height: hp("15%"),
-    alignItems: "flex-end",
-    justifyContent: "flex-end",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 50,
+    flexDirection: "row",
   },
 });

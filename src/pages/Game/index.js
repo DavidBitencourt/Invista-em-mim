@@ -23,19 +23,19 @@ export default function Game() {
   const questionOne = [
     {
       label: "Juro nominal",
-      value: false,
+      value: "Juro nominal",
     },
     {
       label: "Custo de oportunidade",
-      value: false,
+      value: "Custo de oportunidade",
     },
     {
       label: "Juro Real",
-      value: true,
+      value: "Juro Real",
     },
     {
       label: "Inflação",
-      value: false,
+      value: "Inflação",
     },
   ];
 
@@ -157,7 +157,7 @@ export default function Game() {
             resizeMode: "contain",
             width: hp("200%"),
             height: wp("150%"),
-            right: 295,
+            right: 260,
             bottom: 40,
           }}
         />
@@ -179,6 +179,13 @@ export default function Game() {
           />
         </View>
         <View style={styles.footer}>
+          <ButtonQuestions
+            text="VOLTAR"
+            left
+            handler={() => {
+              navigation.navigate("DefineClass");
+            }}
+          />
           <ButtonQuestions
             text={step + 1 !== questions.length ? "PRÓXIMO" : "TERMINAR"}
             handler={

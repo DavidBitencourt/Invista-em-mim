@@ -18,11 +18,19 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  questions: {
+  logo: {
+    width: "100%",
+    height: "30%",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    paddingTop: 20,
+    flexDirection: "row",
+  },
+  containerDash: {
     width: wp("85%"),
     height: hp("85%"),
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     borderRadius: 50,
     backgroundColor: "#FFFFFF",
     borderWidth: 0.3,
@@ -32,18 +40,11 @@ export const styles = StyleSheet.create({
     bottom: hp("20%"),
     zIndex: 55555,
   },
-  questionBox: {
+  boxButton: {
     width: "100%",
-    height: "80%",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    paddingTop: hp("5%"),
-  },
-  footer: {
-    width: "100%",
+    height: "10%",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 50,
-    flexDirection: "row",
+    marginTop: 20,
   },
 });

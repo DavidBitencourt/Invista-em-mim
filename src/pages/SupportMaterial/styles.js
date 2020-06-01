@@ -3,7 +3,7 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from "react-native-responsive-screen";
-
+import { systemWeights } from "react-native-typography";
 export const styles = StyleSheet.create({
   container: {
     width: wp("100%"),
@@ -18,11 +18,11 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  questions: {
+  containerSupportMaterial: {
     width: wp("85%"),
     height: hp("85%"),
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     borderRadius: 50,
     backgroundColor: "#FFFFFF",
     borderWidth: 0.3,
@@ -32,18 +32,41 @@ export const styles = StyleSheet.create({
     bottom: hp("20%"),
     zIndex: 55555,
   },
-  questionBox: {
-    width: "100%",
-    height: "80%",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    paddingTop: hp("5%"),
+  textTitle: {
+    ...systemWeights.bold,
+    fontSize: 25,
+    textAlign: "center",
   },
-  footer: {
+  boxDetail: {
+    width: "100%",
+    marginTop: 20,
+    flexDirection: "row",
+  },
+  textAuthor: {
+    ...systemWeights.light,
+    fontSize: 20,
+    textAlign: "center",
+  },
+  textDate: {
+    ...systemWeights.light,
+    fontSize: 20,
+    textAlign: "center",
+  },
+  boxMaterial: {
+    width: "100%",
+    height: "75%",
+    marginTop: 20,
+  },
+  textArticle: {
+    ...systemWeights.light,
+    fontSize: 17,
+    textAlign: "left",
+  },
+  boxButton: {
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 50,
+    marginTop: 10,
     flexDirection: "row",
   },
 });
