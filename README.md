@@ -15,6 +15,7 @@ Matheus Ferreira - Business -
 https://www.linkedin.com/in/matheus-ferreira-santos/
 
 Ana Clara Cavalgante Sousa Silva - Business/Designer -
+https://www.linkedin.com/in/anaclaracavalcante
 
 O aplicativo Invista em mim é um MVP da solução que criamos para o desafio do hackathon BMG (https://www.hackathonbmg.com.br/), cujo propósito é proporcionar aos avaliadores uma pequena parcela de como seria a experiência de um usuário consumindo o produto desenvolvido por nós (Time 18).
 
